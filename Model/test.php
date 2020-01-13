@@ -3,5 +3,5 @@
 
 class test
 {
-
+    public function etc(){}
 }
