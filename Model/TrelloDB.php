@@ -4,4 +4,5 @@
 class TrelloDB
 {
  LongLongLon;
+ AnOcCho;
 }
