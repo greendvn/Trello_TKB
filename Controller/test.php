@@ -3,5 +3,5 @@
 
 class test
 {
-
+    protected abc;
 }
