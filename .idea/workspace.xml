@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45cf11dc-0749-41fb-bd5d-9682db2c1ab8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Model/TrelloDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -54,25 +62,37 @@
       <option name="presentableId" value="Default" />
       <updated>1578884485946</updated>
       <workItem from="1578884488262" duration="866000" />
-      <workItem from="1578886960374" duration="8000" />
+      <workItem from="1578886960374" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="480" y="211" width="465" height="380" key="NewPhpClassDialog" timestamp="1578885214830">
-      <screen x="70" y="27" width="1296" height="741" />
+    <state x="607" y="288" width="465" height="380" key="NewPhpClassDialog" timestamp="1578887542357">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="607" y="288" key="NewPhpClassDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1578887542357" />
     <state x="480" y="211" width="465" height="380" key="NewPhpClassDialog/70.27.1296.741@70.27.1296.741" timestamp="1578885214830" />
     <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1578885223193">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1578885223193" />
-    <state x="449" y="187" key="SettingsEditor" timestamp="1578886967613">
+    <state x="449" y="187" key="SettingsEditor" timestamp="1578887240740">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="449" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1578886967613" />
+    <state x="449" y="187" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1578887240740" />
   </component>
 </project>
