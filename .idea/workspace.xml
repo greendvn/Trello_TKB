@@ -13,7 +13,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Trello_TKB" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WK3VwOGbVpNP8mEFxIXBT0vRsG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,11 +48,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578884485946</updated>
-      <workItem from="1578884488262" duration="251000" />
+      <workItem from="1578884488262" duration="562000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="480" y="211" width="465" height="380" key="NewPhpClassDialog" timestamp="1578885214830">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="480" y="211" width="465" height="380" key="NewPhpClassDialog/70.27.1296.741@70.27.1296.741" timestamp="1578885214830" />
+    <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1578885223193">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1578885223193" />
   </component>
 </project>
