@@ -4,6 +4,4 @@
 class test
 {
 
-    protected $abc;
-
 }
