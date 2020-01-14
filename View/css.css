@@ -1,20 +1,39 @@
 /* SCSS Components _____________________________*/
 /* Vars */
-$white: #ffffff;
-$light: #e0e0e0;
-$dark: #404040;
-$muted-light: #fafafa;
-$muted-dark: #2e2d2d;
+$
+white: #ffffff
+
+;
+$
+light: #e0e0e0
+
+;
+$
+dark: #404040
+
+;
+$
+muted-light: #fafafa
+
+;
+$
+muted-dark: #2e2d2d
+
+;
 html {
     box-sizing: border-box;
 }
 
 /* Mixins */
-// Remove default button stylings
+/
+/
+Remove default button stylings
+
 @mixin purge-defaults {
     button {
         border: 0;
         background: transparent;
+
 &:focus {
      outline: none;
  }
@@ -34,8 +53,8 @@ html {
 .main {
     width: 100%;
     height: 100vh;
-//display: flex;
-//flex-direction: column;
+/ / display: flex;
+/ / flex-direction: column;
 }
 
 body {
@@ -45,10 +64,13 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-//overflow: hidden;
-&.dark {
-     background: #212121;
- }
+/ / overflow: hidden;
+
+&
+.dark {
+    background: #212121;
+}
+
 }
 
 /* Header styles */
@@ -57,18 +79,22 @@ header {
     padding: 2rem;
     flex-direction: row;
     justify-content: space-between;
+
 .logo {
     font-size: 36px;
-    color: $dark;
+    color: $ dark;
 }
+
 .hamburger {
     font-size: 30px;
-    color: $dark;
+    color: $ dark;
 }
+
 .moon {
     font-size: 28px;
     color: #fbc02d;
 }
+
 }
 
 footer {
@@ -76,7 +102,7 @@ footer {
     bottom: 0;
     padding: 1rem;
     width: 100%;
-    background: $muted-light;
+    background: $ muted-light;
     box-sizing: border-box;
 }
 
@@ -85,20 +111,24 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: $muted-light;
+    background: $ muted-light;
     width: 0px;
     transition: 0.2s;
     padding-top: 2rem;
+
 a,
 .menu-icon {
     font-weight: 600;
-//font-size: 18px;
-    color: lighten($dark, 20%);
+/ / font-size: 18 px;
+    color: lighten($ dark, 20%);
     margin-bottom: 20px;
     padding-bottom: 4px;
-&:hover {
-     color: $dark;
- }
+
+&
+:hover {
+    color: $ dark;
+}
+
 }
 }
 
@@ -139,10 +169,13 @@ a,
 .social-icon {
     margin: auto;
     font-weight: 600;
-    color: lighten($dark, 20%);
-&:hover {
-     color: $dark;
- }
+    color: lighten($ dark, 20%);
+
+&
+:hover {
+    color: $ dark;
+}
+
 }
 
 li a {
@@ -158,56 +191,72 @@ li a {
     justify-content: space-around;
 }
 
-// This grid is for the elements within the side-menu
-   .grid {
-       display: grid;
-       grid-template-columns: repeat(12, 1fr);
-       grid-template-rows: repeat(12, 1fr);
-       grid-column-gap: 10px;
-       grid-row-gap: 10px;
-   }
+/
+/
+This grid is for the elements within the side-menu
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
 
 /* Dark styles */
 
 .dark {
+
 body,
 html {
     background: #212121;
 }
+
 .main {
-    color: $light;
+    color: $ light;
     background: #212121;
 }
+
 footer {
-    background: $muted-dark;
+    background: $ muted-dark;
+
 .social-icon {
-    color: darken($light, 20%);
-&:hover {
-     color: $light;
- }
+    color: darken($ light, 20%);
+
+&
+:hover {
+    color: $ light;
+}
+
 }
 }
 .side-menu {
-    background: $muted-dark;
+    background: $ muted-dark;
     height: 100vh;
+
 a,
 .menu-icon {
-    color: darken($light, 20%);
+    color: darken($ light, 20%);
     margin-bottom: 20px;
-&:hover {
-     color: $light;
- }
+
+&
+:hover {
+    color: $ light;
+}
+
 }
 }
 .body-grid-blocks {
-    background: $muted-dark;
+    background: $ muted-dark;
 }
+
 .hamburger {
-    color: $light;
+    color: $ light;
 }
+
 .logo {
-    color: $light;
+    color: $ light;
 }
+
 }
 
 .dark-mode-button:active {

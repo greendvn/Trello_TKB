@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45cf11dc-0749-41fb-bd5d-9682db2c1ab8" name="Default Changelist" comment="" />
+    <list default="true" id="45cf11dc-0749-41fb-bd5d-9682db2c1ab8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -48,14 +51,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578884485946</updated>
-      <workItem from="1578884488262" duration="866000" />
+      <workItem from="1578884488262" duration="2724000" />
+      <workItem from="1578966856427" duration="412000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="170" y="127" width="1096" height="541" key="DiffContextDialog" timestamp="1578886266972">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="170" y="127" width="1096" height="541" key="DiffContextDialog/70.27.1296.741@70.27.1296.741" timestamp="1578886266972" />
+    <state x="259" y="175" width="908" height="452" key="EditFileWatcherDialog" timestamp="1578967302875">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="259" y="175" width="908" height="452" key="EditFileWatcherDialog/70.27.1296.741@70.27.1296.741" timestamp="1578967302875" />
+    <state x="501" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1578887859811">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="501" y="155" width="424" height="491" key="FileChooserDialogImpl/70.27.1296.741@70.27.1296.741" timestamp="1578887859811" />
     <state x="480" y="211" width="465" height="380" key="NewPhpClassDialog" timestamp="1578885214830">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
