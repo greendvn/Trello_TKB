@@ -14,6 +14,9 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Trello_TKB" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -26,6 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -52,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578884485946</updated>
       <workItem from="1578884488262" duration="2724000" />
-      <workItem from="1578966856427" duration="412000" />
+      <workItem from="1578966856427" duration="3328000" />
     </task>
     <servers />
   </component>
@@ -73,10 +77,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="170" y="127" width="1096" height="541" key="DiffContextDialog" timestamp="1578886266972">
+    <state x="170" y="127" width="1066" height="562" maximized="true" key="DiffContextDialog" timestamp="1578969681897">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="170" y="127" width="1096" height="541" key="DiffContextDialog/70.27.1296.741@70.27.1296.741" timestamp="1578886266972" />
+    <state x="170" y="127" width="1066" height="562" maximized="true" key="DiffContextDialog/70.27.1296.741@70.27.1296.741" timestamp="1578969681897" />
     <state x="259" y="175" width="908" height="452" key="EditFileWatcherDialog" timestamp="1578967302875">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
@@ -93,5 +97,13 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1578885223193" />
+    <state x="562" y="103" width="301" height="596" key="VCS.ChangeListViewerDialog" timestamp="1578969573047">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="562" y="103" width="301" height="596" key="VCS.ChangeListViewerDialog/70.27.1296.741@70.27.1296.741" timestamp="1578969573047" />
+    <state x="313" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578969766755">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="313" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1296.741@70.27.1296.741" timestamp="1578969766755" />
   </component>
 </project>
