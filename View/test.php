@@ -1,3 +1,0 @@
-<?php
-abc;
-def;
