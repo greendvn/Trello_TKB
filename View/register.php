@@ -36,9 +36,9 @@
 <body>
 <div class="limiter">
     <div class="container-login100" style="background-image: url('../images/bg-01.jpg');">
-        <div class="col-12 col-6">
-            <h1 style="text-align: center;color: springgreen;font-size: 80px">Created By Monk-Eyes</h1>
-        </div>
+
+            <h1 style="text-align: center;color: springgreen;font-size: 80px;font-style: italic"><span style="font-style: italic">Created By Monk-Eyes</span></h1>
+
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
             <form method="post" class="login100-form validate-form mt-5">
