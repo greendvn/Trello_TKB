@@ -7,7 +7,7 @@ class StatusDB
 
     public function __construct($connect)
     {
-        $this->connect = $connect
+        $this->connect = $connect;
     }
 
     public function getCardStatus(){
@@ -17,7 +17,7 @@ class StatusDB
         $result = $stmt->fetchAll();
         $arr = [];
         foreach ($result as $item) {
-            $status = new Status($item["cardStatus"];
+            $status = new Status($item["cardStatus"]);
             $status->setId($item["id"]);
             array_push($arr, $status);
         }
