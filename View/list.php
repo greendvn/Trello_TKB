@@ -26,12 +26,10 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <?php include "menu.php" ?>
+        <?php include "../layout/menu.php" ?>
         <div class="col0-12 col-12">
             <nav class="navbar navbar-expand-lg navbar-light btn-secondary">
-                <a class="navbar-brand" href="#">Monk-Eyes</a>
+                <a class="navbar-brand" href="#" style="padding-left: 250px">Monk-Eyes</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -76,16 +74,7 @@
                 </div>
             </nav>
             <table class="table">
-                <div class="row">
-                    <div class="card col-md-3">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">1Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <?php include "../layout/menu.php" ?>
                             <div class="col0-12 col-12">
-                                <?php include "../layout/navbar.php" ?>
                                 <main class="main-container">
                                     <ul class="columns">
 
