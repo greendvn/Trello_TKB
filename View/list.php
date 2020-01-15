@@ -19,10 +19,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css'>
+    <link rel="stylesheet" href="../css/dropdrag.css">
+
 
 </head>
 <body>
-
 <div class="container">
     <div class="row">
         <?php include "menu.php" ?>
@@ -80,75 +83,95 @@
                             <h5 class="card-title">1Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                            <?php include "../layout/menu.php" ?>
+                            <div class="col0-12 col-12">
+                                <?php include "../layout/navbar.php" ?>
+                                <main class="main-container">
+                                    <ul class="columns">
 
-                    <div class=" card col-md-3 border">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">2Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                                        <li class="column to-do-column">
+                                            <div class="column-header">
+                                                <h4>To Do</h4>
+                                            </div>
+                                            <ul class="task-list" id="to-do">
+                                                <li class="task">
+                                                    <p>Analysis</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>Coding</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>Card Sorting</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>Measure</p>
+                                                </li>
+                                            </ul>
+                                            <section class="add-task-container">
+                                                <input type="text" maxlength="12" id="taskText"
+                                                       placeholder="New Task..." onkeydown="if (event.keyCode == 13)
+                        document.getElementById('add').click()">
+                                                <button id="add" class="button add-button" onclick="addTask()">Add New
+                                                    Task
+                                                </button>
+                                            </section>
+                                        </li>
 
-                    <div class=" card col-md-3 ">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">3Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                                        <li class="column doing-column">
+                                            <div class="column-header">
+                                                <h4>Doing</h4>
+                                            </div>
+                                            <ul class="task-list" id="doing">
+                                                <li class="task">
+                                                    <p>Hypothesis</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>User Testing</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>Prototype</p>
+                                                </li>
+                                            </ul>
+                                        </li>
 
-                    <div class="card col-md-3 ml-auto">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">4Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-            </table>
-        </div>
-    </div>
-</div>
+                                        <li class="column done-column">
+                                            <div class="column-header">
+                                                <h4>Done</h4>
+                                            </div>
+                                            <ul class="task-list" id="done">
+                                                <li class="task">
+                                                    <p>Ideation</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>Sketches</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="column trash-column">
+                                            <div class="column-header">
+                                                <h4>Trash</h4>
+                                            </div>
+                                            <ul class="task-list" id="trash">
+                                                <li class="task">
+                                                    <p>Interviews</p>
+                                                </li>
+                                                <li class="task">
+                                                    <p>Research</p>
+                                                </li>
+
+                                            </ul>
+                                            <div class="column-button">
+                                                <button class="button delete-button" onclick="emptyTrash()">Delete
+                                                </button>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </main>
+                            </div>
+                            <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script>
+                            <script src="../js/dropdrag.js"></script>
 
 </body>
 </html>

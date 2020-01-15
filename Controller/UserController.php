@@ -1,7 +1,4 @@
 <?php
-//include "../Model/DBConnection.php";
-//include "../Model/UserDB.php";
-//include "../Model/User.php";
 
 class UserController
 {
@@ -35,7 +32,7 @@ class UserController
             $username = $_POST['username'];
             $password = $_POST['password'];
             $email = $_POST['email'];
-            $user = new User($username,$password,$email);
+            $user = new User($username, $password, $email);
             foreach ($users as $item) {
                 if ($username === $item->getUsername()) {
                     echo "Tên tài khoản đã tồn tại";
