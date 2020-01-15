@@ -1,7 +1,7 @@
 <?php
 include "Controller/UserController.php";
-include "Model/User.php";
-include "Model/UserDB.php";
+include "Model/user/User.php";
+include "Model/user/UserDB.php";
 include "Model/DBConnection.php";
 
 $userController = new UserController();
