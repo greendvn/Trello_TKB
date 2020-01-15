@@ -38,12 +38,17 @@ class UserController
             $user = new User($username,$password,$email);
             foreach ($users as $item) {
                 if ($username === $item->getUsername()) {
-                    echo "Tên tài khoản đã tồn tại";
+                    echo "<span style='color: red'>Tên tài khoản đã tồn tại</span>";
                     return false;
                 }
             }
             $this->userDB->createUser($user);
-            echo "Đăng ký thành công";
+            echo "<span style='color: blue'>Đăng ký thành công</span><br>";
+            echo "<span style='color: green; text-align: center'> Tên đăng nhập của bạn là: $username</span><br>";
+            echo "<a href='homepage.php'><span style='color: red;font-style: italic;font-size: 20px'>Bấm vào đây để đăng nhập ngay</span></a>";
         }
+    }
+    public function registerSuccess(){
+            include 'alertRegisterAndLogin.php';
     }
 }
