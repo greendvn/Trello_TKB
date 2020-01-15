@@ -7,7 +7,7 @@ class DayDB
 
     public function __construct($connect)
     {
-        $this->connect = $connect
+        $this->connect = $connect;
     }
 
     public function getDayList(){
@@ -17,7 +17,7 @@ class DayDB
         $result = $stmt->fetchAll();
         $arr = [];
         foreach ($result as $item) {
-            $day = new Day($item["day"];
+            $day = new Day($item["day"]);
             $day->setId($item["id"]);
             array_push($arr, $day);
         }
