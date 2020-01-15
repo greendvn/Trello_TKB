@@ -1,7 +1,11 @@
 <?php
+include "Controller/UserController.php";
+include "Model/User.php";
+include "Model/UserDB.php";
+include "Model/DBConnection.php";
 
-
-
+$userController = new UserController();
+$userController->login();
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +41,7 @@
 <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
         <div class="col-12 col-6">
-            <h1 style="text-align: center;color: springgreen;font-size: 80px">Created By Monk-Eyes</h1>
+            <h1 style="text-align: center;font-size: 80px; font-style: italic"><span style="color: red">Created </span><span style="color: yellow">By </span> <span style="color: blue">Monk </span><span style="color: mediumspringgreen"> Eyes</span></h1>
         </div>
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
@@ -52,13 +56,13 @@
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Password is required">
                     <span class="label-input100">Password</span>
-                    <input class="input100" type="password" name="pass" placeholder="Type your password">
+                    <input class="input100" type="password" name="password" placeholder="Type your password">
                     <span class="focus-input100" data-symbol="&#xf190;"></span>
                 </div>
                 <div class="container-login100-form-btn mt-3">
                     <div class="wrap-login100-form-btn">
                         <div class="login100-form-bgbtn"></div>
-                        <button class="login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
                             Login
                         </button>
                     </div>
