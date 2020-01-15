@@ -19,66 +19,62 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+
 </head>
 <body>
+
 <div class="container">
     <div class="row">
-        <div class="col-12 md-4">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Trang Chu</a>
+        <?php include "menu.php" ?>
+        <div class="col0-12 col-12">
+            <nav class="navbar navbar-expand-lg navbar-light btn-secondary">
+                <a class="navbar-brand" href="#">Monk-Eyes</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Tham Quan <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Log Out</a>
+                                <a class="dropdown-item" href="#">Home</a>
+                                <a class="dropdown-item" href="#">Review</a>
+                                <a class="dropdown-item" href="#">Menu</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </li>
                     </ul>
-                    <div class="mx-auto" style="width: 200px;">
-                        <h3><img src="https://img.icons8.com/color/40/000000/trello.png">Trello</h3>
+                    <div class="mx-auto" style="width: 300px;">
+                        <h3><img src="../images/2.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">TiCo
+                        </h3>
                     </div>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item avatar">
+                            <a class="nav-link p-0" href="#">
+                                <img src="../images/1.png" class="rounded-circle z-depth-0"
+                                     alt="avatar image" height="35">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <form class="form-inline">
-                    <button class="btn btn-outline-success" type="button">Research Project</button>
-                    <button class="btn btn-sm btn-outline-secondary" type="button">Mẫu</button>
-                </form>
-<!--                <div class="btn-group">-->
-<!--                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"-->
-<!--                            data-display="static" aria-haspopup="true" aria-expanded="false">-->
-<!--                      Hiện Menu-->
-<!--                    </button>-->
-<!--                    <div class="dropdown-menu dropdown-menu-lg-right">-->
-<!--                        <button class="dropdown-item" type="button">Action</button>-->
-<!--                        <button class="dropdown-item" type="button">Another action</button>-->
-<!--                        <button class="dropdown-item" type="button">Something else here</button>-->
-<!--                    </div>-->
-<!--                </div>-->
-
             </nav>
             <table class="table">
                 <div class="row">
-                    <div class="card col-md-3" >
+                    <div class="card col-md-3">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">1Card title</h5>
@@ -96,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class=" card col-md-3 border" >
+                    <div class=" card col-md-3 border">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">2Card title</h5>
@@ -114,7 +110,7 @@
                         </div>
                     </div>
 
-                    <div class=" card col-md-3 " >
+                    <div class=" card col-md-3 ">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">3Card title</h5>
@@ -132,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="card col-md-3 ml-auto" >
+                    <div class="card col-md-3 ml-auto">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">4Card title</h5>
@@ -153,5 +149,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
