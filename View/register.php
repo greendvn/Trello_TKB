@@ -41,21 +41,27 @@ $userController = new UserController();
 <div class="limiter">
     <div class="container-login100" style="background-image: url('../images/bg-01.jpg');">
         <div class="col-12 col-6">
-            <h1 style="text-align: center;font-size: 80px; font-style: italic"><span style="color: red">Created </span><span style="color: yellow">By </span> <span style="color: blue">Monk </span><span style="color: mediumspringgreen"> Eyes</span></h1>
+            <h1 style="text-align: center;font-size: 80px; font-style: italic"><span
+                        style="color: red">Created </span><span style="color: yellow">By </span> <span
+                        style="color: blue">Monk </span><span style="color: mediumspringgreen"> Eyes</span></h1>
         </div>
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-            <span><?php $userController->register();?></span>
-
             <form method="post" class="login100-form validate-form mt-5">
 					<span class="login100-form-title p-b-49">
 						Register
 					</span>
+                <div class="container" style="text-align: center">
+                    <div class="col-12 col-6 mb-3" style="display: inline-block">
+                        <span><?php $userController->register();?></span>
+                    </div>
+                </div>
+
                 <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
                     <span class="label-input100">Username</span>
                     <input class="input100" type="text" name="username" placeholder="Type your username">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>
                 </div>
-                <div class="wrap-input100 validate-input m-b-23" data-validate="Email is reauired">
+                <div class="wrap-input100 validate-input m-b-23" data-validate="Email 1is reauired">
                     <span class="label-input100">Email</span>
                     <input class="input100" type="text" name="email" placeholder="Type your email">
                     <span class="focus-input100" data-symbol="&#xf206;"></span>
@@ -73,6 +79,7 @@ $userController = new UserController();
                         </button>
                     </div>
                 </div>
+
             </form>
         </div>
     </div>
