@@ -20,8 +20,12 @@ public function getListUsers(){
     }
     return $arr;
 }
-public function createUser(){
-    $sql = "INSERT INTO users(username,password,email)";
+public function createUser($user){
+    $username = $user->getUsername();
+    $password = $user->getPassword();
+    $email = $user->getEmail();
+    $sql = "INSERT INTO users(username,password,email) VALUES ('$username','$password','$email')";
     $this->userDBConnect->query($sql);
+
 }
 }

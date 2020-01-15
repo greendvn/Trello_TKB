@@ -1,6 +1,10 @@
 <?php
+include "../Controller/UserController.php";
+include "../Model/User.php";
+include "../Model/UserDB.php";
+include "../Model/DBConnection.php";
 
-
+$userController = new UserController();
 
 ?>
 
@@ -40,6 +44,7 @@
             <h1 style="text-align: center;font-size: 80px; font-style: italic"><span style="color: red">Created </span><span style="color: yellow">By </span> <span style="color: blue">Monk </span><span style="color: mediumspringgreen"> Eyes</span></h1>
         </div>
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <span><?php $userController->register();?></span>
 
             <form method="post" class="login100-form validate-form mt-5">
 					<span class="login100-form-title p-b-49">
@@ -63,7 +68,7 @@
                 <div class="container-login100-form-btn mt-3">
                     <div class="wrap-login100-form-btn mt-3">
                         <div class="login100-form-bgbtn"></div>
-                        <button class="login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
                             Register
                         </button>
                     </div>

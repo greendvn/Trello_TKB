@@ -21,24 +21,29 @@ class UserController
             $password = $_POST['password'];
             foreach ($users as $item) {
                 if ($username == $item->getUsername() && $password == $item->getPassword()) {
-                    echo "Login thành công";
                     header("Location: View/homepage.php");
+                    break;
                 }
             }
+            echo "Sai tên đăng nhập hoặc mật khẩu";
         }
     }
-
     public function register()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $users = $this->userDB->getListUsers();
             $username = $_POST['username'];
+            $password = $_POST['password'];
+            $email = $_POST['email'];
+            $user = new User($username,$password,$email);
             foreach ($users as $item) {
-                if ($username == $item['username']) {
+                if ($username === $item->getUsername()) {
                     echo "Tên tài khoản đã tồn tại";
+                    return false;
                 }
             }
-
+            $this->userDB->createUser($user);
+            echo "Đăng ký thành công";
         }
     }
 }
