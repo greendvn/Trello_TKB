@@ -22,7 +22,6 @@ class UserController
             $password = $_POST['password'];
             foreach ($users as $item) {
                 if ($username == $item->getUsername() && $password == $item->getPassword()) {
-
                     $_SESSION["id"] = $item->getUserID();
                     $_SESSION["username"] = $item->getUsername();
                     header("Location: View/homepage.php?username=$username");
@@ -69,11 +68,14 @@ class UserController
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $pass = $_POST['password'];
             $email = $_POST['email'];
-            $image = $_POST['image'];
+            $image = $_FILES["image"];
+            $imageName = "../images/".date("Y-m-d H:i:s").$image["name"];
+            $fileTmp = $image['tmp_name'];
+            move_uploaded_file($fileTmp, $imageName);
             $newUser = new User($username, $pass, $email);
-            $newUser->setImage($image);
+            $newUser->setImage($imageName);
             $this->userDB->updateUser($newUser);
-            header("Location: homepage.php?username=$username");
+            header("Location: homepage.php?page=profile&username=$username");
         }
     }
 

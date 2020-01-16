@@ -228,7 +228,7 @@
 <body>
 <nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
     <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-        <ul class="nav navbar-nav navbar-right ml-auto">
+        <div class="nav navbar-nav navbar-right ml-auto">
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-eercast" aria-hidden="true"></i><span>Monk_Eyes</span></a></li>
             <li class="nav-item active" style="padding-left: 150px"><a href="#" class="nav-link"><i
                             class="fa fa-home"></i><span>Home</span></a></li>
@@ -246,16 +246,16 @@
             </li>
             <li class="nav-item dropdown">
                 <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img
-                            src="../images/bg-01.jpg" class="avatar" alt="Avatar"> Antonio Moreno <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></li>
-                    <li><a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></li>
+                            src="../images/bg-01.jpg" class="avatar" alt="Avatar">Admin<b class="caret"></b></a>
+                <ol class="dropdown-menu">
+                    <li><a href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>" class="dropdown-item"><i class="fa fa-user-o"></i>Profile</a></li>
+                    <li><a href="homepage.php" class="dropdown-item"><i class="fa fa-calendar-o"></i>Home</a></li>
                     <li><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></li>
                     <li class="divider dropdown-divider"></li>
-                    <li><a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
-                </ul>
+                    <li><a href="logout.php" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
+                </ol>
             </li>
-        </ul>
+        </div>
     </div>
 </nav>
 </body>
