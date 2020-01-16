@@ -7,6 +7,12 @@ include "../Model/DBConnection.php";
 
 $userController = new UserController();
 
+session_start();
+if ($_SESSION["username"] == NULL) {
+    header('Location: ../index.php');
+}
+//include_once "list.php"
+
 ?>
 <!doctype html>
 <html lang="en">

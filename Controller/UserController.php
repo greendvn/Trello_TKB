@@ -10,7 +10,7 @@ class UserController
 
     public function __construct()
     {
-        $db = new DBConnection("mysql:host=127.0.0.1;dbname=TiCo_database", "root", "long1996");
+        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database", "root", "long1996");
         $this->userDB = new UserDB($db->connect());
     }
 
@@ -22,6 +22,9 @@ class UserController
             $password = $_POST['password'];
             foreach ($users as $item) {
                 if ($username == $item->getUsername() && $password == $item->getPassword()) {
+
+                    $_SESSION["id"] = $item->getUserID();
+                    $_SESSION["username"] = $item->getUsername();
                     header("Location: View/homepage.php?username=$username");
                     break;
                 }
@@ -63,11 +66,11 @@ class UserController
         $username = $_GET['username'];
         $user = $this->userDB->getUserByName($username);
         include_once 'edituser.php';
-        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $pass = $_POST['password'];
             $email = $_POST['email'];
             $image = $_POST['image'];
-            $newUser = new User($username,$pass,$email);
+            $newUser = new User($username, $pass, $email);
             $newUser->setImage($image);
             $this->userDB->updateUser($newUser);
             header("Location: homepage.php?username=$username");
