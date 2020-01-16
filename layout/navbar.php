@@ -28,7 +28,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>">Profile</a>
-                    <a class="dropdown-item" href="homepage.php">Home</a>
+                    <a class="dropdown-item" href="homepage.php?username=<?php echo $_GET['username'] ?>">Home</a>
                     <a class="dropdown-item" href="#">Review</a>
                     <a class="dropdown-item" href="#">Menu</a>
                     <a class="dropdown-item" href="logout.php">Log Out</a>

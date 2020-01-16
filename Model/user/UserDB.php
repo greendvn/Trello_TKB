@@ -34,14 +34,21 @@ public function getUserByName($username){
     $result = $stmt->fetch();
     $user = new User($result['username'],$result['password'],$result['email']);
     $user->setUserID($result['id']);
+    $user->setImage($result['image']);
     return $user;
 
 }
 public function updateUser($user){
+    $name = $user->getUsername();
     $pass = $user->getPassword();
     $email = $user->getEmail();
     $image = $user->getImage();
-    $sql = "UPDATE users SET password = '$pass',email = '$email', image = '$image'";
-    $this->userDBConnect->query($sql);
+    $sql = "UPDATE users SET password = ?, email = ?, image = ? WHERE username = ?";
+    $stmt = $this->userDBConnect->prepare($sql);
+    $stmt->bindParam(1,$pass);
+    $stmt->bindParam(2,$email);
+    $stmt->bindParam(3,$image);
+    $stmt->bindParam(4,$name);
+    $stmt->execute();
 }
 }
