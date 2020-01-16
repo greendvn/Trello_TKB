@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><span>Home</span> <span class="sr-only">(current)</span></a>
             </li>
         
         </ul>
@@ -28,7 +28,7 @@
                          alt="avatar image" height="35">
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Log Out</a>
+                    <a class="dropdown-item" href="logout.php">Log Out</a>
                     <a class="dropdown-item" href="#">Home</a>
                     <a class="dropdown-item" href="#">Review</a>
                     <a class="dropdown-item" href="#">Menu</a>

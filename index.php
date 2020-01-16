@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "Controller/UserController.php";
 include "Model/user/User.php";
 include "Model/user/UserDB.php";

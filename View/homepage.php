@@ -1,4 +1,8 @@
 <?php
+session_start();
+if ($_SESSION["username"] == NULL) {
+    header('Location: ../index.php');
+}
 include_once "list.php"
 ?>
 <!doctype html>
