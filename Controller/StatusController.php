@@ -7,7 +7,7 @@ class StatusController
 
     public function __construct()
     {
-        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database", "root", "Dieu1988");
+        $db = new DBConnection("mysql:host=127.0.0.1;dbname=TiCo_database", "root", "password");
         $this->statusDB = new StatusDB($db->connect());
     }
 

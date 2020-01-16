@@ -10,7 +10,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#"><span>Home</span> <span class="sr-only">(current)</span></a>
             </li>
-        
+
         </ul>
         <div class="mx-auto" style="width: 300px;">
             <h3><img src="../images/2.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">TiCo
@@ -20,24 +20,21 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown navbar-nav ml-auto nav-flex-icons">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="../images/1.png" class="rounded-circle z-depth-0"
                          alt="avatar image" height="35">
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="homepage.php?page=profile&username=<?php echo $_GET['username']?>">Profile</a>
-                    <a class="dropdown-item" href="logout.php">Log Out</a>
-                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>">Profile</a>
+                    <a class="dropdown-item" href="homepage.php">Home</a>
                     <a class="dropdown-item" href="#">Review</a>
                     <a class="dropdown-item" href="#">Menu</a>
-                    <a class="dropdown-item" href="#">Log Out</a>
+                    <a class="dropdown-item" href="logout.php">Log Out</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
-        </ul>
     </div>
 </nav>

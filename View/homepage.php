@@ -11,7 +11,6 @@ session_start();
 if ($_SESSION["username"] == NULL) {
     header('Location: ../index.php');
 }
-//include_once "list.php"
 
 ?>
 <!doctype html>
@@ -33,11 +32,6 @@ if ($_SESSION["username"] == NULL) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css'>
-    <link rel="stylesheet" href="../css/dropdrag.css">
-
-
 </head>
 <body background="../images/3.jpg">
 <?php include "../layout/menu.php" ?>
@@ -55,10 +49,7 @@ if ($_SESSION["username"] == NULL) {
             include_once 'list.php';
     }
     ?>
-
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script>
-<script src="../js/dropdrag.js"></script>
-
 </body>
 </html>
+
