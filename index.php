@@ -12,7 +12,7 @@ $userController = new UserController();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V4</title>
+    <title>Login TiCo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -41,10 +41,17 @@ $userController = new UserController();
 <body>
 <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+<<<<<<< HEAD
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
+=======
+        <div class="wrap-login100 p-l-55 p-r-50 p-t-10 p-b-40">
+>>>>>>> bed4914f1cbf388f91ee90d8c013a73f49cdc32c
             <form method="post" class="login100-form validate-form mt-5">
-					<span class="login100-form-title p-b-49">
+                <div class="col-12 col-6">
+                    <img src="images/5.png" width="150px" height="150px" style="margin-left: 30%;margin-bottom: 10%">
+                </div>
+                <span class="login100-form-title p-b-49 mt-3">
 						Login to TiCo
 					</span>
                 <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
@@ -68,7 +75,7 @@ $userController = new UserController();
                     <div class="wrap-login100-form-btn mt-3">
                         <div class="login100-form-bgbtn"></div>
                         <button class="login100-form-btn" onclick="window.location.href ='View/register.php'">
-                           Register
+                            Register
                         </button>
                     </div>
                 </div>
