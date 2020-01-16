@@ -28,4 +28,20 @@ public function createUser($user){
     $this->userDBConnect->query($sql);
 
 }
+public function getUserByName($username){
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $stmt = $this->userDBConnect->query($sql);
+    $result = $stmt->fetch();
+    $user = new User($result['username'],$result['password'],$result['email']);
+    $user->setUserID($result['id']);
+    return $user;
+
+}
+public function updateUser($user){
+    $pass = $user->getPassword();
+    $email = $user->getEmail();
+    $image = $user->getImage();
+    $sql = "UPDATE users SET password = '$pass',email = '$email', image = '$image'";
+    $this->userDBConnect->query($sql);
+}
 }
