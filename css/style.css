@@ -115,9 +115,8 @@ footer {
   background: #ff4444;
 }
 
-
 .task-list {
-  min-height: 8rem;
+  min-height: 3rem;
 }
 
 ul {

@@ -5,7 +5,6 @@ dragula([
     document.getElementById("Review"),
     document.getElementById("Done")
 ])
-    // removeOnSpill: false
     .on("drag", function (el) {
         el.className.replace("ex-moved", "");
     })
@@ -17,6 +16,9 @@ dragula([
         let cardId = el.id;
         let status = container.id;
         let day = $(container).closest("main").attr("id");
+        console.log(day);
+        console.log(cardId);
+        console.log(status);
         $.ajax({
             url: 'updateCardStatus.php',
             type: 'POST',
@@ -25,7 +27,7 @@ dragula([
                 'status': status,
                 'day': day
             },
-        }).done(function(data) {
+        }).done(function (data) {
             console.log(data);
         });
     })
@@ -44,4 +46,3 @@ function addTask() {
     document.getElementById("taskText").value = "";
 }
 
-/* Vanilla JS to delete tasks in 'Trash' column */
