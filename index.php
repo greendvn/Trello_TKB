@@ -41,12 +41,8 @@ $userController = new UserController();
 <body>
 <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-<<<<<<< HEAD
-        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
-=======
         <div class="wrap-login100 p-l-55 p-r-50 p-t-10 p-b-40">
->>>>>>> bed4914f1cbf388f91ee90d8c013a73f49cdc32c
             <form method="post" class="login100-form validate-form mt-5">
                 <div class="col-12 col-6">
                     <img src="images/5.png" width="150px" height="150px" style="margin-left: 30%;margin-bottom: 10%">

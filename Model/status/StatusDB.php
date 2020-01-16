@@ -25,20 +25,5 @@ class StatusDB
         return $arr;
     }
 
-//    public function creatCardStatus($status)
-//    {
-//        $sql = "INSERT INTO status (cardStatus)
-//                VALUE (:cardStatus)";
-//        $stmt = $this->connect->prepare($sql);
-//        $stmt->bindParam(':cardStatus', $status->getCardStatus());
-//        $stmt->execute();
-//    }
-//
-//    public function deleteCardStatus($status_id)
-//    {
-//        $sql = "DELETE FROM status
-//                WHERE id = $status_id";
-//        $stmt = $this->connect->query($sql);
-//        $stmt->execute();
-//    }
+
 }

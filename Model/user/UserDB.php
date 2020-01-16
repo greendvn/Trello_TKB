@@ -11,8 +11,7 @@ class UserDB
         $this->userDBConnect = $userDBConnect;
     }
 
-<<<<<<< HEAD
-}
+
 public function getUserByName($username){
     $sql = "SELECT * FROM users WHERE username = '$username'";
     $stmt = $this->userDBConnect->query($sql);
@@ -36,7 +35,6 @@ public function updateUser($user){
     $stmt->bindParam(4,$name);
     $stmt->execute();
 }
-=======
     public function getListUsers()
     {
         $sql = "SELECT * FROM users";
@@ -60,5 +58,4 @@ public function updateUser($user){
         $this->userDBConnect->query($sql);
 
     }
->>>>>>> bed4914f1cbf388f91ee90d8c013a73f49cdc32c
 }
