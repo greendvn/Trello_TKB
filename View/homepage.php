@@ -58,7 +58,7 @@ if ($_SESSION["username"] == NULL) {
 
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script>
-<script src="../js/dropdrag.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>
