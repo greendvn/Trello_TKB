@@ -4,6 +4,8 @@ include_once "../Controller/UserController.php";
 include_once "../Controller/StatusController.php";
 
 
-$parentElId  = $_GET['parentIdParam'];
-$droppedElIndex  = $_GET['droppedIndexParam'];
-$droppedElId  = $_GET['droppedIdParam'];
+$cardId =$_POST["cardId"];
+$status =$_POST["status"];
+$day =$_POST["day"];
+var_dump($cardId);
+die();
