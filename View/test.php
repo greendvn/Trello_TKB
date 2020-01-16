@@ -226,66 +226,38 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-expand-xl">
+<nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
     <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
         <div class="nav navbar-nav navbar-right ml-auto">
-            <li class="nav-item"><a href="https://facebook.com" class="nav-link"><i class="fa fa-eercast"
-                                                                                    aria-hidden="true"></i><span>Monk_Eyes</span></a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-eercast" aria-hidden="true"></i><span>Monk_Eyes</span></a></li>
             <li class="nav-item active" style="padding-left: 150px"><a href="#" class="nav-link"><i
                             class="fa fa-home"></i><span>Home</span></a></li>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-gears"></i><span>Projects</span></a></li>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-users"></i><span>Team</span></a></li>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
             </li>
-            <ul>
+            <li>
                 <form class="navbar-form form-inline">
                     <div class="input-group search-box">
                         <input type="text" id="search" class="form-control" placeholder="Search here...">
                         <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
                     </div>
                 </form>
-            </ul>
-            <div class="mx-auto" style="width: 300px;">
-                <h3><img src="../images/2.png" class="rounded-circle z-depth-0" alt="avatar image" height="35">TiCo
-                </h3>
-            </div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <li class="nav-item dropdown navbar-nav ml-auto nav-flex-icons">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="../images/1.png" class="rounded-circle z-depth-0"
-                         alt="avatar image" height="35">
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>">Profile</a>
-                    <a class="dropdown-item" href="homepage.php?username=<?php echo $_GET['username'] ?>">Home</a>
-                    <a class="dropdown-item" href="#">Review</a>
-                    <a class="dropdown-item" href="#">Menu</a>
-                    <a class="dropdown-item" href="logout.php">Log Out</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
             </li>
             <li class="nav-item dropdown">
-                <a href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>" data-toggle="dropdown"
-                   class="nav-link dropdown-toggle user-action"><img
-                            src="../images/bg-01.jpg" class="avatar" alt="Avatar"> Admin <b class="caret"></b></a>
+                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img
+                            src="../images/bg-01.jpg" class="avatar" alt="Avatar">Admin<b class="caret"></b></a>
                 <ol class="dropdown-menu">
-                    <li><a href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>"
-                           class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></li>
-                    <li><a href="homepage.php" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></li>
-                    <li><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Setting</a></li>
+                    <li><a href="homepage.php?page=profile&username=<?php echo $_GET['username'] ?>" class="dropdown-item"><i class="fa fa-user-o"></i>Profile</a></li>
+                    <li><a href="homepage.php" class="dropdown-item"><i class="fa fa-calendar-o"></i>Home</a></li>
+                    <li><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></li>
                     <li class="divider dropdown-divider"></li>
-                    <li><a href="logout.php" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
-                    </li>
+                    <li><a href="logout.php" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></li>
                 </ol>
             </li>
         </div>
     </div>
 </nav>
 </body>
+<?php include "list.php" ?>
 </html>
