@@ -21,6 +21,8 @@ class UserController
             $password = $_POST['password'];
             foreach ($users as $item) {
                 if ($username == $item->getUsername() && $password == $item->getPassword()) {
+                    $_SESSION["id"] = $item->getUserID();
+                    $_SESSION["username"] = $item->getUsername();
                     header("Location: View/homepage.php");
                     break;
                 }
