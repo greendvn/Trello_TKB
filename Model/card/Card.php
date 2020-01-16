@@ -10,7 +10,7 @@ class Card
     protected $statusId;
     protected $dayId;
 
-    public function __construct($name,$userId,$statusId,$dayId)
+    public function __construct($name, $userId, $statusId, $dayId)
     {
         $this->name = $name;
         $this->userId = $userId;
@@ -82,4 +82,35 @@ class Card
         return $this->userId;
     }
 
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @param mixed $userId
+     */
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+    }
+
+    /**
+     * @param mixed $statusId
+     */
+    public function setStatusId($statusId)
+    {
+        $this->statusId = $statusId;
+    }
+
+    /**
+     * @param mixed $dayId
+     */
+    public function setDayId($dayId)
+    {
+        $this->dayId = $dayId;
+    }
 }
