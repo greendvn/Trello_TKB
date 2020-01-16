@@ -1,3 +1,5 @@
+<?php include "../layout/boostraps.php"?>
+
 <div class="container" style="height: 700px;width: 500px">
     <div class="card" style="margin-top: 100px">
         <div class="container">

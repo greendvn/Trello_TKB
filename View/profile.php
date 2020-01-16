@@ -1,3 +1,4 @@
+<?php include "../layout/boostraps.php"?>
 <div class="container" style="margin-top: 50px; height: 700px;width: 600px;">
     <div class="flip-card" style="height: 100%;width: 100%" >
         <div class="flip-card-inner">
