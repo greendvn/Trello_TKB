@@ -13,13 +13,13 @@ class CardController
     public function index()
     {
         $cards = $this->cardDB->getCard($_SESSION['id']);
-        include_once "View/list.php";
+        include_once "../View/listCard.php";
     }
 
     public function createCard()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-            include_once "View/add.php";
+            include_once "../View/add.php";
         } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $card = new Card($_POST['name'],
                 $_POST['user_id'],
@@ -58,6 +58,6 @@ class CardController
         $card_id = $_GET['id'];
         $card = $this->cardDB->getCardById($card_id);
 
-        include_once "View/description.php";
+        include_once "../View/description.php";
     }
 }

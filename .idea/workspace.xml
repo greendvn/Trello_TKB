@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7b975ec-a116-4af1-b0de-b289f98c353a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Controller/DayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/DayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/StatusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/StatusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/UserController.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WPpDifRS8PWSnxmlGjpfGpBNrO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test3" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Model/card" />
+      <recent name="$PROJECT_DIR$/View" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Controller" />
+      <recent name="$PROJECT_DIR$/Model/user" />
+      <recent name="$PROJECT_DIR$/Model/status" />
+      <recent name="$PROJECT_DIR$/Model/day" />
+      <recent name="$PROJECT_DIR$/Model/card" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7b975ec-a116-4af1-b0de-b289f98c353a" name="Default Changelist" comment="" />
+      <created>1579060966041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579060966041</updated>
+      <workItem from="1579060967609" duration="3181000" />
+      <workItem from="1579070330540" duration="2012000" />
+      <workItem from="1579073502292" duration="1215000" />
+      <workItem from="1579075504949" duration="289000" />
+      <workItem from="1579081961876" duration="242000" />
+      <workItem from="1579082588650" duration="421000" />
+      <workItem from="1579103627683" duration="2805000" />
+      <workItem from="1579106529105" duration="4069000" />
+      <workItem from="1579110982080" duration="1094000" />
+      <workItem from="1579112941681" duration="1794000" />
+      <workItem from="1579114871705" duration="12097000" />
+      <workItem from="1579132129062" duration="67000" />
+      <workItem from="1579132198132" duration="1548000" />
+      <workItem from="1579136767859" duration="712000" />
+      <workItem from="1579142605113" duration="6837000" />
+      <workItem from="1579157412707" duration="7520000" />
+      <workItem from="1579168880105" duration="3265000" />
+      <workItem from="1579172205953" duration="190000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="170" y="127" width="1096" height="541" key="DiffContextDialog" timestamp="1579110347531">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="170" y="127" width="1096" height="541" key="DiffContextDialog/70.27.1296.741@70.27.1296.741" timestamp="1579110347531" />
+    <state x="259" y="175" width="908" height="452" key="EditFileWatcherDialog" timestamp="1579108949804">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="259" y="175" width="908" height="452" key="EditFileWatcherDialog/70.27.1296.741@70.27.1296.741" timestamp="1579108949804" />
+    <state x="501" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579172393863">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="501" y="155" width="424" height="491" key="FileChooserDialogImpl/70.27.1296.741@70.27.1296.741" timestamp="1579172393863" />
+    <state x="423" y="115" width="580" height="571" key="MultipleFileMergeDialog" timestamp="1579169149296">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="423" y="115" width="580" height="571" key="MultipleFileMergeDialog/70.27.1296.741@70.27.1296.741" timestamp="1579169149296" />
+    <state x="480" y="211" width="465" height="387" key="NewPhpClassDialog" timestamp="1579103893408">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="480" y="211" width="465" height="387" key="NewPhpClassDialog/70.27.1296.741@70.27.1296.741" timestamp="1579103893408" />
+    <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1579116514428">
+      <screen x="70" y="27" width="1296" height="741" />
+    </state>
+    <state x="513" y="323" width="399" height="156" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1579116514428" />
+  </component>
+</project>

@@ -6,7 +6,7 @@ class CardDB
 
     public function __construct()
     {
-        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database;charset=utf8", "root", "@Ngovietan123");
+        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database;charset=utf8", "root", "Dieu1988");
         $this->conn = $db->connect();
     }
 

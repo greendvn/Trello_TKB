@@ -25,26 +25,26 @@ header h1 {
 }
 
 span {
-  font-size: 1.4rem;
+  font-size: 3rem;
 }
 
 p {
   font-family: "Roboto Slab", serif;
 }
 
-/*a,*/
-/*a:link,*/
-/*a:active,*/
-/*a:visited {*/
-/*  color: #0066aa;*/
-/*  text-decoration: none;*/
-/*  border-bottom: #000013 0.16rem solid;*/
-/*}*/
+a,
+a:link,
+a:active,
+a:visited {
+  color: #0066aa;
+  text-decoration: none;
+  border-bottom: #000013 0.16rem solid;
+}
 
-/*a:hover {*/
-/*  color: #000013;*/
-/*  border-bottom: #0066aa 0.16rem solid;*/
-/*}*/
+a:hover {
+  color: #000013;
+  border-bottom: #0066aa 0.16rem solid;
+}
 
 header,
 footer {
@@ -57,7 +57,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 18.8rem;
+  width: 20rem;
   height: 5.3rem;
   margin: auto;
   background: #a8a8a8;
@@ -84,6 +84,7 @@ footer {
 
 .column {
   width: 20rem;
+  min-height: 6rem;
   margin: 0 0.6rem;
   background: #a8a8a8;
   border: #000013 0.2rem solid;
@@ -107,16 +108,16 @@ footer {
   background: #13a4d9;
 }
 
-.Review-column .column-header {
+.Done-column .column-header {
   background: #15d072;
 }
 
-.Done-column .column-header {
+.Review-column .column-header {
   background: #ff4444;
 }
 
 .task-list {
-  min-height: 3rem;
+  min-height: 6rem;
 }
 
 ul {
