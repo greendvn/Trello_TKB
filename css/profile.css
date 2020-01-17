@@ -65,19 +65,19 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: #bbb;
+    background-color: red;
     color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: red;
     color: white;
     transform: rotateY(180deg);
 }
 .info-user{
     position: relative;
-    top: 200px;
+    top: 5px;
 }
 .form-edit{
 position: relative;
