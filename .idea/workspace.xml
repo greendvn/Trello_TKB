@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b975ec-a116-4af1-b0de-b289f98c353a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/StatusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/StatusController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/card/CardDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/card/CardDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/status/StatusDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/status/StatusDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/description.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/homepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/listCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/listCard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/updateCardStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/updateCardStatus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tico123" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,6 +94,7 @@
       <workItem from="1579168880105" duration="3265000" />
       <workItem from="1579172205953" duration="190000" />
       <workItem from="1579240945880" duration="3340000" />
+      <workItem from="1579244452623" duration="685000" />
     </task>
     <servers />
   </component>
