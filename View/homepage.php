@@ -1,16 +1,25 @@
 <?php
-
-include "../Controller/UserController.php";
-include "../Model/user/User.php";
-include "../Model/user/UserDB.php";
-include "../Model/DBConnection.php";
-
-$userController = new UserController();
-
 session_start();
 if ($_SESSION["username"] == NULL) {
     header('Location: ../index.php');
 }
+
+include_once "../Controller/UserController.php";
+include_once "../Model/user/User.php";
+include_once "../Model/user/UserDB.php";
+include_once "../Model/DBConnection.php";
+include_once "../Controller/CardController.php";
+include_once "../Controller/DayController.php";
+include_once "../Controller/StatusController.php";
+include_once "../Model/card/Card.php";
+include_once "../Model/card/CardDB.php";
+include_once "../Model/status/Status.php";
+include_once "../Model/status/StatusDB.php";
+
+$userController = new UserController();
+$cardController = new CardController();
+$statusController = new StatusController();
+
 
 ?>
 <!doctype html>
@@ -54,6 +63,12 @@ if ($_SESSION["username"] == NULL) {
             break;
         case 'edit':
             $userController->editUser();
+            break;
+        case 'listCard':
+            $cardController->index();
+            break;
+        case 'editCard':
+            $cardController->edit();
             break;
         default:
             include_once 'list.php';

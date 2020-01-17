@@ -6,7 +6,7 @@ class CardDB
 
     public function __construct()
     {
-        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database;charset=utf8", "root", "@Ngovietan123");
+        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database;charset=utf8", "root", "Dieu1988");
         $this->conn = $db->connect();
     }
 
@@ -21,13 +21,18 @@ class CardDB
 
     public function addCard($card)
     {
+
         $sql = "INSERT INTO cards(name,user_id ,status_id, day_id)
-                VALUES (:name, :userId, :statusId, :dayId)";
+                VALUES (?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(':name', $card->getName());
-        $stmt->bindParam(':userId', $card->getUserId());
-        $stmt->bindParam(':statusId', $card->getStatusId());
-        $stmt->bindParam(':dayId', $card->getDayId());
+        $name = $card->getName();
+        $userId = (int) $card->getUserId();
+        $statusId = $card->getStatusId();
+        $dayId = (int) $card->getDayId();
+        $stmt->bindParam(1, $name);
+        $stmt->bindParam(2, $userId);
+        $stmt->bindParam(3, $statusId);
+        $stmt->bindParam(4, $dayId);
         $stmt->execute();
     }
 

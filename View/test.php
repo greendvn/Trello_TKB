@@ -13,7 +13,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
         body {
-            background: #80bdff;
             font-family: 'Varela Round', sans-serif;
         }
 
