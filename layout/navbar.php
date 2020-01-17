@@ -229,8 +229,10 @@
 <nav class="navbar navbar-inverse navbar-expand-xl">
     <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
         <div class="nav navbar-nav navbar-right ml-auto">
-            <li class="nav-item"><a href="https://https://www.facebook.com/groups/392154725023563/" class="nav-link"><i class="fa fa-eercast"
-                                                                                                                        aria-hidden="true"></i><span>Monk_Eyes</span></a>
+            <li class="nav-item"><a href="https://https://www.facebook.com/groups/392154725023563/" class="nav-link"><i
+                            class="fa fa-eercast"
+                            aria-hidden="true"></i><span>Monk_Eyes</span></a>
+                aria-hidden="true"></i><span>Monk_Eyes</span></a>
             </li>
             <li class="nav-item active" style="padding-left: 150px"><a href="#" class="nav-link"><i
                             class="fa fa-home"></i><span>Home</span></a></li>
