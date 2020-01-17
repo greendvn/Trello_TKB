@@ -16,5 +16,5 @@ $cardController = new CardController();
 $cardId =$_POST["cardId"];
 $cardStatus =$_POST["cardStatus"];
 $idStatus = $statusController->getStatusId($cardStatus);
-$cardController->editStatus($cardId,$idStatus);
+$cardController->editStatus($cardId,$idStatus[0]);
 
