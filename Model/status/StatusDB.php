@@ -10,7 +10,8 @@ class StatusDB
         $this->connect = $connect;
     }
 
-    public function getCardStatus(){
+    public function getCardStatus()
+    {
         $sql = "SELECT * FROM status";
         $stmt = $this->connect->prepare($sql);
         $stmt->execute();
@@ -23,5 +24,6 @@ class StatusDB
         }
         return $arr;
     }
+
 
 }

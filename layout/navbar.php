@@ -12,7 +12,7 @@ $user = $userController->getUser();
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-users"></i><span>Team</span></a></li>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
             </li>
-            <li style="padding-left: 500px">
+            <li style="padding-left: 800px">
                 <form class="navbar-form form-inline">
                     <div class="input-group search-box">
                         <input type="text" id="search" class="form-control" placeholder="Search here...">
@@ -35,6 +35,4 @@ $user = $userController->getUser();
         </div>
     </div>
 </nav>
-
-
 

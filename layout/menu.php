@@ -58,11 +58,9 @@
             </a>
         </div>
         <ul>
-            <li>Explore</li>
-            <li>Sell</li>
-            <li>Buy</li>
-            <li>Buy</li>
-            <li>Buy</li>
+            <li><a href="homepage.php">Home</a></li>
+            <li><a href="https://https://www.facebook.com/groups/392154725023563/">Facebook</a></li>
+            <li><a href="#">Fanpage</a></li>
         </ul>
     </div>
 </div>

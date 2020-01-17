@@ -34,12 +34,26 @@ $listStatus = $statusController->getListStatus();
     <main class="main-container">
         <ul class="columns">
             <li class="column ToDo-column">
+    <header>
+        <h1>Drag & Drop<br/><span>Lean Kanban Board</span></h1>
+    </header>
+    <section class="add-task-container">
+        <input type="text" maxlength="12" id="taskText" placeholder="New Task..." onkeydown="if (event.keyCode == 13)
+                        document.getElementById('add').click()">
+        <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
+    </section>
+
+
+    <main class="main-container" id="colum1">
+        <ul class="columns" >
+            <li class="column ToDo-column" >
                 <div class="column-header">
                     <h4><?php echo $listStatus[0]->getCardStatus() ?></h4>
                 </div>
+
                 <ul class="task-list" id="ToDo">
                     <?php foreach ($listDay as $day): ?>
-                        <li class="task ui-widget-header" id="<?php echo $day->getDay() ?>">
+                        <li class="task" id="<?php echo $day->getDay() ?>">
                             <p><?php echo $day->getDay() ?></p>
                         </li>
                     <?php endforeach; ?>
@@ -57,7 +71,9 @@ $listStatus = $statusController->getListStatus();
                     <h4><?php echo $listStatus[1]->getCardStatus() ?></h4>
                 </div>
                 <ul class="task-list" id="Doing">
-
+                    <li class="task">
+                        <p>Ideation</p>
+                    </li>
 
                 </ul>
             </li>
@@ -99,26 +115,8 @@ $listStatus = $statusController->getListStatus();
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="../js/script.js"></script>
 <script type="text/javascript">
-    $(function () {
 
 
-        $(document).on('click', 'ul li a', function (e) {
-            e.preventDefault();
-
-            let example1 = $(this).parents('ul:first').attr('id');
-            $('#results').append('<p>Result from example 1: <strong>' + example1 + '</strong></p>');
-
-            console.log(example1);
-            let example2 = $(this).parents('ul:eq(0)').attr('id');
-
-            $('#results').append('<p>Result from example 2: <strong>' + example2 + '</strong></p>');
-            let example3 = $(this).closest('ul').attr('id');
-
-
-            $('#results').append('<p>Result from example 3: <strong>' + example3 + '</strong></p>');
-
-        });
-    });
 
 </script>
 </body>
