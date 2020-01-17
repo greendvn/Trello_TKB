@@ -2,7 +2,7 @@
 $userController = new UserController();
 $user = $userController->getUser();
 ?>
-<nav class="navbar navbar-inverse navbar-expand-xl">
+<nav class="navbar navbar-inverse navbar-expand-xl" >
     <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
         <div class="nav navbar-nav navbar-collapse">
             <li class="nav-item"><a href="homepage.php?username=<?php echo $_GET['username']?>" class="nav-link"><i class="fa fa-keyboard-o" aria-hidden="true"></i><span>Monk_Eyes</span></a></li>
@@ -12,7 +12,7 @@ $user = $userController->getUser();
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-users"></i><span>Team</span></a></li>
             <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
             </li>
-            <li style="padding-left: 800px">
+            <li style="padding-left: 500px">
                 <form class="navbar-form form-inline">
                     <div class="input-group search-box">
                         <input type="text" id="search" class="form-control" placeholder="Search here...">

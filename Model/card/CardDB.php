@@ -26,9 +26,9 @@ class CardDB
                 VALUES (?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
         $name = $card->getName();
-        $userId = (int) $card->getUserId();
+        $userId = (int)$card->getUserId();
         $statusId = $card->getStatusId();
-        $dayId = (int) $card->getDayId();
+        $dayId = (int)$card->getDayId();
         $stmt->bindParam(1, $name);
         $stmt->bindParam(2, $userId);
         $stmt->bindParam(3, $statusId);
@@ -46,12 +46,12 @@ class CardDB
     public function editCard($card_id, $card)
     {
         $sql = "UPDATE cards
-                SET (name = :name, user_id = :user_id, status_id = :status_id, day_id = :day_id)
+                SET name = :newname, description = :newdescription, status_id = :newstatus_id
                 WHERE id = :card_id";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(':name', $card->getName());
-        $stmt->bindParam(':status_id', $card->getStatusId());
-        $stmt->bindParam(':day_id', $card->getDayId());
+        $stmt->bindParam(':newname', $card->getName());
+        $stmt->bindParam(':newdescription', $card->getDescription());
+        $stmt->bindParam(':newstatus_id', $card->getStatusId());
         $stmt->bindParam(':card_id', $card_id);
         $stmt->execute();
     }

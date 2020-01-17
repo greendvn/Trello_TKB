@@ -34,32 +34,38 @@ class CardController
 
     public function deleteCard()
     {
-        $card_id = $_GET['id'];
+        $card_id = $_GET['cardId'];
+        $dayId = $_GET['dayId'];
         $this->cardDB->delete($card_id);
-        header("local: index.php");
+        header("location: homepage.php?page=listCard&dayId=$dayId");
     }
 
     public function edit()
     {
+        $card = $this->cardDB->getCardById($_GET['cardId']);
         if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-            $card = $this->cardDB->getCardById($_GET['cardId']);
             include_once "edit.php";
         } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $card_id = $_GET['id'];
-            $card = new Card($_POST['name'],
-                $_POST['user_id'],
-                $_POST['status_id'],
-                $_POST['day_id']);
+            $card_id = $_GET['cardId'];
+            $card->setName($_POST["name"]);
+            $card->setDescription($_POST["description"]);
+            $dayid = $card->getDayId();
             $this->cardDB->editCard($card_id, $card);
-            header("Location: index.php");
+
+            header("Location: homepage.php?page=listCard&dayId=$dayid");
         }
     }
 
-    public function cardDescription()
-    {
-        $card_id = $_GET['id'];
-        $card = $this->cardDB->getCardById($card_id);
+    public function editStatus($cardId,$newStatusId){
+        $card = $this->cardDB->getCardById($cardId);
 
-        include_once "../View/description.php";
+        $card->setStatusId($newStatusId);
+        $dayId= $card->getDayId();
+        $this->cardDB->editCard($cardId, $card);
+        header("Location: homepage.php?page=listCard&dayId=$dayId");
+
+
     }
+
+
 }

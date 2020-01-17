@@ -57,7 +57,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 18rem;
+  width: 19rem;
   height: 5.3rem;
   margin: auto;
   background: #a8a8a8;
@@ -159,7 +159,7 @@ li {
   background-color: #ffcb1e;
   padding: 0 1rem;
   height: 2.8rem;
-  width: 10rem;
+  width: 8rem;
   margin-top: 0.6rem;
 }
 

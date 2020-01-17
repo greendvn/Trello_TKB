@@ -8,26 +8,28 @@ dragula([
   .on("drag", function(el) {
     el.className.replace("ex-moved", "");
   })
-  .on("drop", function(el) {
+  .on("drop", function(el, container) {
     el.className += "ex-moved";
+    let cardId = el.id;
+    let cardStatus = container.id;
+    $.ajax({
+      type: "POST",
+      url: "updateCardStatus.php",
+      data: {
+        cardId: cardId,
+        cardStatus: cardStatus
+      },
+      success: function() {
+         // alert(cardId +cardStatus);
+      }
+    });
   })
-  .on("over", function(el, container) {
+.on("over", function(el, container) {
     container.className += "ex-over";
-    console.log(container).id;
   })
   .on("out", function(el, container) {
     container.className.replace("ex-over", "");
   });
 
-/* Vanilla JS to add a new task */
-// function addTask() {
-//   /* Get task text from input */
-//   var inputTask = document.getElementById("taskText").value;
-//   /* Add task to the 'ToDo' column */
-//   document.getElementById("ToDo").innerHTML +=
-//     "<li class='task'><p>" + inputTask + "</p></li>";
-//   /* Clear task text from input after adding task */
-//   document.getElementById("taskText").value = "";
-// }
 
 

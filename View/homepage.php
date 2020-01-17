@@ -70,6 +70,9 @@ $statusController = new StatusController();
         case 'editCard':
             $cardController->edit();
             break;
+        case "deleteCard":
+            $cardController->deleteCard();
+            break;
         default:
             include_once 'list.php';
     }

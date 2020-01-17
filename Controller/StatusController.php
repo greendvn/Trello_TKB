@@ -15,4 +15,8 @@ class StatusController
         return $this->statusDB->getCardStatus();
     }
 
+    public function getStatusId($status){
+        return $this->statusDB->getStatusId($status);
+    }
+
 }
