@@ -30,29 +30,6 @@ $statusController = new StatusController();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-</head>
-<body background="../images/3.jpg">
-<?php include "../layout/menu.php" ?>
-<?php $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : null;
-switch ($page) {
-    case 'profile':
-        $userController->getProfile();
-        break;
-    case 'edit':
-        $userController->editUser();
-        break;
-    case 'listCard':
-        $cardController->index();
-        break;
-    case 'editCard':
-        $cardController->edit();
-        break;
-    default:
-        include_once 'test.php';
-}
-?>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -86,6 +63,12 @@ switch ($page) {
             break;
         case 'edit':
             $userController->editUser();
+            break;
+        case 'listCard':
+            $cardController->index();
+            break;
+        case 'editCard':
+            $cardController->edit();
             break;
         default:
             include_once 'list.php';

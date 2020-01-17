@@ -32,50 +32,7 @@ $listStatus = $statusController->getListStatus();
 
 </head>
 <body>
-<div class="col-12 col-12">
-    <main class="main-container">
-        <ul class="columns">
-            <li class="column ToDo-column">
-    <header>
-        <h1>Drag & Drop<br/><span>Lean Kanban Board</span></h1>
-    </header>
-    <section class="add-task-container">
-        <input type="text" maxlength="12" id="taskText" placeholder="New Task..." onkeydown="if (event.keyCode == 13)
-                        document.getElementById('add').click()">
-        <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
-    </section>
 
-
-    <main class="main-container" id="colum1">
-        <ul class="columns" >
-            <li class="column ToDo-column" >
-                <div class="column-header">
-                    <h4><?php echo $listStatus[0]->getCardStatus() ?></h4>
-                </div>
-
-                <ul class="task-list" id="ToDo">
-                    <?php foreach ($listDay as $day): ?>
-                        <li class="task" id="<?php echo $day->getDay() ?>">
-                            <p><?php echo $day->getDay() ?></p>
-                        </li>
-                    <?php endforeach; ?>
-                    <section class="add-task-container">
-                        <input type="text" maxlength="12" id="taskText" placeholder="New Task..." onkeydown="if (event.keyCode == 13)
-                        document.getElementById('add').click()">
-                        <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
-                    </section>
-                </ul>
-            </li>
-
-
-            <li class="column Doing-column">
-                <div class="column-header">
-                    <h4><?php echo $listStatus[1]->getCardStatus() ?></h4>
-                </div>
-                <ul class="task-list" id="Doing">
-                    <li class="task">
-                        <p>Ideation</p>
-                    </li>
 
 <h1 class="title">TiCo</h1>
 
