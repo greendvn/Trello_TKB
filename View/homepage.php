@@ -36,7 +36,6 @@ switch ($page) {
         include_once 'test.php';
 }
 ?>
-</div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script>
 <script src="../js/script.js"></script>
 
