@@ -259,5 +259,4 @@
     </div>
 </nav>
 </body>
-<?php include "list.php" ?>
 </html>

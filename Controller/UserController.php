@@ -10,7 +10,7 @@ class UserController
 
     public function __construct()
     {
-        $db = new DBConnection("mysql:host=127.0.0.1;dbname=TiCo_database", "root", "password");
+        $db = new DBConnection("mysql:host=localhost;dbname=TiCo_database", "root", "long1996");
         $this->userDB = new UserDB($db->connect());
     }
 
@@ -52,6 +52,10 @@ class UserController
             echo "<a href='homepage.php?username=$username'><span style='color: red;font-style: italic;font-size: 20px'>Bấm vào đây để đăng nhập ngay</span></a>";
         }
     }
+    public function getUser(){
+        $username = $_GET['username'];
+        return $this->userDB->getUserByName($username);
+    }
 
     public function getProfile()
     {
@@ -73,7 +77,10 @@ class UserController
             $fileTmp = $image['tmp_name'];
             move_uploaded_file($fileTmp, $imageName);
             $newUser = new User($username, $pass, $email);
-            $newUser->setImage($imageName);
+            if ($image['name'] == NULL){
+                $newUser->setImage($user->getImage());
+            }
+            else $newUser->setImage($imageName);
             $this->userDB->updateUser($newUser);
             header("Location: homepage.php?page=profile&username=$username");
         }

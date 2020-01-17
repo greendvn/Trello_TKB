@@ -23,6 +23,7 @@ public function getUserByName($username){
 
 }
 public function updateUser($user){
+
     $name = $user->getUsername();
     $pass = $user->getPassword();
     $email = $user->getEmail();
