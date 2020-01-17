@@ -30,6 +30,7 @@ $statusController = new StatusController();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
 </head>
 <body background="../images/3.jpg">
 <?php include "../layout/menu.php" ?>
@@ -43,6 +44,9 @@ switch ($page) {
         break;
     case 'listCard':
         $cardController->index();
+        break;
+    case 'editCard':
+        $cardController->edit();
         break;
     default:
         include_once 'test.php';

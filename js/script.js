@@ -20,14 +20,14 @@ dragula([
   });
 
 /* Vanilla JS to add a new task */
-function addTask() {
-  /* Get task text from input */
-  var inputTask = document.getElementById("taskText").value;
-  /* Add task to the 'ToDo' column */
-  document.getElementById("ToDo").innerHTML +=
-    "<li class='task'><p>" + inputTask + "</p></li>";
-  /* Clear task text from input after adding task */
-  document.getElementById("taskText").value = "";
-}
+// function addTask() {
+//   /* Get task text from input */
+//   var inputTask = document.getElementById("taskText").value;
+//   /* Add task to the 'ToDo' column */
+//   document.getElementById("ToDo").innerHTML +=
+//     "<li class='task'><p>" + inputTask + "</p></li>";
+//   /* Clear task text from input after adding task */
+//   document.getElementById("taskText").value = "";
+// }
 
 

@@ -39,7 +39,7 @@ $listStatus = $statusController->getListStatus();
     <?php foreach ($listDay as $day): ?>
         <card data-image="../images/days/<?php echo $day->getId() ?>.jpg">
             <h1 slot="header"><?php echo $day->getDay() ?></h1>
-            <p slot="content"><a href="homepage.php?page=listCard&username=<?php echo $_GET['username'] ?>&dayId=<?php echo $day->getId() ?>">
+            <p slot="content"><a href="homepage.php?page=listCard&dayId=<?php echo $day->getId() ?>">
                     Click here to start.</a></p>
         </card>
     <?php endforeach; ?>

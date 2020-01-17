@@ -1,3 +1,4 @@
+
 <div class="row">
     <form method="post">
         <div class="form-control">
@@ -20,6 +21,6 @@
             <label>Day ID</label>
             <input type="number" name="day_id" value="<?php echo $card->getDayId(); ?>">
         </div>
-        <input type="submit" value="add">
+
     </form>
 </div>
