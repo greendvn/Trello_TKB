@@ -9,7 +9,7 @@
 
             </div>
             <div class="flip-card-back"
-                 style="background-color: palevioletred;border-radius: 50px; text-align: center;">
+                 style="background-color: mediumspringgreen;border-radius: 50px; text-align: center;">
 
                 <img src="<?php echo $user->getImage(); ?>" alt="avatar"
                      style="width: 80%; height: 50%;margin-top: 40px;border-radius: 100%">
