@@ -31,16 +31,6 @@ $listStatus = $statusController->getListStatus();
 </head>
 <body>
 <div class="col-12 col-12">
-    <header>
-        <h1>Drag & Drop<br/><span>Lean Kanban Board</span></h1>
-    </header>
-
-    <section class="add-task-container">
-        <input type="text" maxlength="12" id="taskText" placeholder="New Task..." onkeydown="if (event.keyCode == 13)
-                        document.getElementById('add').click()">
-        <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
-    </section>
-
     <main class="main-container">
         <ul class="columns">
             <li class="column ToDo-column">
@@ -53,6 +43,11 @@ $listStatus = $statusController->getListStatus();
                             <p><?php echo $day->getDay() ?></p>
                         </li>
                     <?php endforeach; ?>
+                    <section class="add-task-container">
+                        <input type="text" maxlength="12" id="taskText" placeholder="New Task..." onkeydown="if (event.keyCode == 13)
+                        document.getElementById('add').click()">
+                        <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
+                    </section>
                 </ul>
             </li>
 

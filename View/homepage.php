@@ -33,12 +33,20 @@ if ($_SESSION["username"] == NULL) {
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body background="../images/3.jpg">
 <?php include "../layout/menu.php" ?>
+<?php include "../layout/navbar.php" ?>
 <div class="col0-12 col-12">
-    <?php include "../layout/navbar.php" ?>
+
     <?php $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : null;
     switch ($page) {
         case 'profile':
