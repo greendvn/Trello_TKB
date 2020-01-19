@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Simple Drag and Drop Lean Kanban Board Tool</title>
+    <title>TiCo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css'>
     <link rel="stylesheet" href="../css/style.css">
@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <body>
 <!-- partial:index.partial.html -->
 <header>
-    <h1>Drag & Drop<br/><span>Lean Kanban Board</span></h1>
+    <h1>TiCo</h1>
 </header>
 
 
@@ -51,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                     $cardByStatus = $cardController->filterCardByStatusAndDay($status->getId(), $dayId, $cards);
                     foreach ($cardByStatus as $card):
                         ?>
-                        <li class="task" onclick="window.location.href ='homepage.php?page=editCard&cardId=<?php echo $card->getId()?>'">
+                        <li class="task" id="<?php echo $card->getId() ?>" onclick="window.location.href ='homepage.php?page=editCard&cardId=<?php echo $card->getId()?>'">
                             <p><?php
                                 echo $card->getName();
                                 ?></p>

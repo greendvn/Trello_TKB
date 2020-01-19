@@ -53,7 +53,7 @@ class UserController
         }
     }
     public function getUser(){
-        $username = $_GET['username'];
+        $username = $_SESSION['username'];
         return $this->userDB->getUserByName($username);
     }
 

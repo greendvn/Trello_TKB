@@ -8,7 +8,7 @@
                         <div class="form-group" style="margin-top: 20px">
                             <label for="exampleInputEmail1"><i class="fa fa-user"></i> Username</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" style="width: 430px"
-                                   disabled value="<?php echo $user->getUsername(); ?>">
+                                   disabled value="<?php echo $user->getUsername(); ?>" >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1"><i class="fa fa-key"></i>Password</label>
