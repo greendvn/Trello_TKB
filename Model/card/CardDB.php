@@ -49,9 +49,12 @@ class CardDB
                 SET name = :newname, description = :newdescription, status_id = :newstatus_id
                 WHERE id = :card_id";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(':newname', $card->getName());
-        $stmt->bindParam(':newdescription', $card->getDescription());
-        $stmt->bindParam(':newstatus_id', $card->getStatusId());
+        $name = $card->getName();
+        $description = $card->getDescription();
+        $status = $card->getStatusId();
+        $stmt->bindParam(':newname', $name);
+        $stmt->bindParam(':newdescription', $description);
+        $stmt->bindParam(':newstatus_id', $status);
         $stmt->bindParam(':card_id', $card_id);
         $stmt->execute();
     }

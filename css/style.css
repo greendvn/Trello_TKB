@@ -24,10 +24,6 @@ header h1 {
   margin: 4rem auto;
 }
 
-span {
-  font-size: 3rem;
-}
-
 p {
   font-family: "Roboto Slab", serif;
 }
@@ -38,7 +34,6 @@ a:active,
 a:visited {
   color: #0066aa;
   text-decoration: none;
-  border-bottom: #000013 0.16rem solid;
 }
 
 a:hover {
@@ -122,6 +117,7 @@ footer {
 
 ul {
   list-style-type: none;
+  max-height: 10rem;
   margin: 0;
   padding: 0;
 }

@@ -24,17 +24,19 @@ public function getUserByName($username){
 }
 public function updateUser($user){
 
+    $sql = "UPDATE users SET password = ?, email = ?, image = ? WHERE username = ?";
+    $stmt = $this->userDBConnect->prepare($sql);
     $name = $user->getUsername();
     $pass = $user->getPassword();
     $email = $user->getEmail();
     $image = $user->getImage();
-    $sql = "UPDATE users SET password = ?, email = ?, image = ? WHERE username = ?";
-    $stmt = $this->userDBConnect->prepare($sql);
+
     $stmt->bindParam(1,$pass);
     $stmt->bindParam(2,$email);
     $stmt->bindParam(3,$image);
     $stmt->bindParam(4,$name);
     $stmt->execute();
+
 }
     public function getListUsers()
     {

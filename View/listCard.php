@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 <body>
 <!-- partial:index.partial.html -->
 <header>
-    <h1>TiCo<br/><span>Monk-Eyes</span></h1>
+    <h1>TiCo</h1>
 </header>
 
 
