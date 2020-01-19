@@ -117,7 +117,7 @@ footer {
 
 ul {
   list-style-type: none;
-  max-height: 10rem;
+  min-height: 10rem;
   margin: 0;
   padding: 0;
 }
